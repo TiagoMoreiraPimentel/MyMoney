@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Usuário:", username);
             console.log("Senha:", password);
             // Redirecionar para outra página, se necessário
-            window.location.href = 'graficos.html';
+            window.location.href = 'menu.html';
         } else {
             alert("Nome de usuário ou senha inválidos.");
         }
