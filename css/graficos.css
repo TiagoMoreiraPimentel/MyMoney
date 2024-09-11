@@ -1,0 +1,30 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    background-color: #f0f0f0; /* Fundo claro */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens ao topo */
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 48px; /* Tamanho da fonte */
+    color: #333; /* Cor do título */
+    text-align: center;
+    margin-top: 20px; /* Espaçamento do topo */
+    width: 100%; /* Faz o título ocupar 100% da largura da tela */
+    position: fixed; /* Fixa o título no topo da tela */
+    top: 0; /* Mantém no topo */
+    left: 0;
+}

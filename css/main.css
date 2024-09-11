@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o fundo da página com imagem da pasta */
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('../imagens/fundo_branco.jpg') no-repeat center center fixed; /* Caminho para a imagem ajustado */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente para o formulário */
+    width: 400px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Labels dos inputs */
+.label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* Campos de entrada de texto */
+.input-field {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Botão de entrar */
+.btn-entrar {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(135deg, #6A5ACD, #483D8B);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-entrar:hover {
+    background: linear-gradient(135deg, #483D8B, #6A5ACD);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn-entrar {
+        height: 45px;
+    }
+}
