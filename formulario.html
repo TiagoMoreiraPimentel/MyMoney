@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Transação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="css/formulario.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Registrar Nova Transação</h1>
+    </header>
+
+    <section id="formulario">
+        <form id="transacao-form">
+            <label for="tipo-transacao">Tipo de Transação:</label>
+            <select id="tipo-transacao" name="tipo-transacao" required>
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option value="despesa">Despesa</option>
+                <option value="receita">Receita</option>
+            </select>
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" placeholder="Descrição do gasto ou receita" required>
+
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" placeholder="Valor da transação" step="0.01" min="0" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <button type="submit" id="btn-registrar">Registrar Transação</button>
+        </form>
+    </section>
+
+    <footer>
+        <p><a href="menu.html" id="btn-voltar">Voltar para o Menu Principal</a></p>
+    </footer>
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 // Função para simular o saldo disponível (pode ser substituída por uma função que consulte um backend)
 function obterSaldo() {
     // Aqui você pode conectar com um backend ou banco de dados para pegar o saldo real
-    return 1500.75;  // Exemplo: R$ 1500,75
+    return 0.00;  // Exemplo: R$ 1500,75
 }
 
 // Função para atualizar o saldo na tela
@@ -13,8 +13,7 @@ function atualizarSaldo() {
 
 // Função para abrir o formulário de registro de gastos (futuramente pode abrir um modal ou redirecionar)
 function abrirFormularioRegistro() {
-    alert('Futuramente, um formulário será aberto para registrar novos gastos.');
-    // Aqui você pode substituir para abrir um modal ou uma nova página de registro de gastos
+    window.location.href = 'formulario.html'; // Redireciona para a página do formulário
 }
 
 // Inicializar o script quando a página estiver carregada
