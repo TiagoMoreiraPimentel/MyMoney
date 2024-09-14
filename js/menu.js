@@ -16,9 +16,32 @@ function abrirFormularioRegistro() {
     window.location.href = 'formulario.html'; // Redireciona para a página do formulário
 }
 
-// Inicializar o script quando a página estiver carregada
+// Função para exibir o modal de alerta personalizado
+function MSGdesenvolvimento() {
+    const modal = document.getElementById('alert-modal');
+    const modalMessage = document.getElementById('modal-message');
+    
+    // Definir a mensagem personalizada
+    modalMessage.textContent = "Em desenvolvimento";
+    
+    // Mostrar o modal
+    modal.style.display = "flex"; // Use 'flex' para garantir que o modal seja exibido centralizado
+}
+
+// Fechar o modal quando o botão "OK" for clicado
+document.getElementById('close-modal').addEventListener('click', function() {
+    document.getElementById('alert-modal').style.display = "none";
+});
+
 window.onload = function() {
-    atualizarSaldo();  // Atualizar saldo na tela assim que a página carregar
+    atualizarSaldo();
+
+    // Adiciona os eventos de clique apenas depois que a página carregar
+    document.getElementById('btn-resumo').addEventListener('click', MSGdesenvolvimento);
+    document.getElementById('btn-entradas').addEventListener('click', MSGdesenvolvimento);
+    document.getElementById('btn-saidas').addEventListener('click', MSGdesenvolvimento);
+    document.getElementById('btn-investimentos').addEventListener('click', MSGdesenvolvimento);
+    document.getElementById('btn-configuracoes').addEventListener('click', MSGdesenvolvimento);
 
     // Evento do botão de registrar gasto
     document.getElementById('btn-registrar-gasto').addEventListener('click', abrirFormularioRegistro);

@@ -14,11 +14,11 @@
     
     <nav>
         <ul>
-            <li><a href="#resumo">Resumo Financeiro</a></li>
-            <li><a href="#entradas">Entradas</a></li>
-            <li><a href="#saidas">Saídas</a></li>
-            <li><a href="#investimentos">Investimentos</a></li>
-            <li><a href="#configuracoes">Configurações</a></li>
+            <li><a id="btn-resumo" href="#resumo">Resumo Financeiro</a></li>
+            <li><a id="btn-entradas" href="#entradas">Entradas</a></li>
+            <li><a id="btn-saidas" href="#saidas">Saídas</a></li>
+            <li><a id="btn-investimentos" href="#investimentos">Investimentos</a></li>
+            <li><a id="btn-configuracoes" href="#configuracoes">Configurações</a></li>
         </ul>
     </nav>
 
@@ -29,8 +29,17 @@
             <span id="saldo-value">R$ 0,00</span>
         </div>
         <!-- Botão para registrar novos gastos -->
-        <button id="btn-registrar-gasto">Registrar Novo Gasto</button>
+        <button id="btn-registrar-gasto">Registrar Nova Despesa/Receita</button>
     </section>
+
+    <!-- Cria um Modal para alerta de mensagens-->
+    <!-- Modal -->
+    <div id="alert-modal" style="display: none;">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="close-modal">OK</button>
+        </div>
+    </div>    
 
     <footer>
         <p>Controle de Finanças Pessoais My Money © 2024</p>

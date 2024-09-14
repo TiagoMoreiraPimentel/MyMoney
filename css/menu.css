@@ -110,6 +110,46 @@ footer p {
     margin: 0;
 }
 
+/* Estilo do modal - Oculto inicialmente */
+#alert-modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente e horizontalmente */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para dar profundidade */
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#close-modal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-modal:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     nav ul {
